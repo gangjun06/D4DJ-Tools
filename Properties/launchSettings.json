@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "D4DJ-Tools": {
-      "commandName": "Project",
-      "commandLineArgs": "chart"
-    }
-  }
-}
