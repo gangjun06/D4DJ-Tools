@@ -18,6 +18,12 @@ namespace D4DJ_Tools
 			var options = MessagePackSerializerOptions.Standard.WithCompression(MessagePackCompression.Lz4Block);
 			return MessagePackSerializer.Deserialize<T>(decrypted, options);
 		}
+		 static byte[] SerializeMsgPack(object obj)
+        {
+            var options = MessagePackSerializerOptions.Standard.WithCompression(MessagePackCompression.Lz4Block);
+            return MessagePackSerializer.Serialize(obj, options);
+        }
+
 
 		static void DecryptMaster(FileInfo inputFile, byte[] decrypted)
 		{
@@ -102,6 +108,28 @@ namespace D4DJ_Tools
 					    DumpToJson(result)
 					);
 				}
+				else if (fileInfo.Name.EndsWith("ResourceList.json"))
+                {
+                    try
+                    {
+                        var result = SerializeMsgPack(
+                            JsonConvert.DeserializeObject<Dictionary<string, (int, int)>>(
+                                File.ReadAllText(fileInfo.FullName)
+                            )
+                        );
+
+                        File.WriteAllBytes(
+                            fileInfo.FullName.Replace(".json", ".msgpack"),
+                            result
+                        );
+
+                        Console.WriteLine($"Success!");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Failed to dump resource list: {ex.Message}");
+                    }
+                }
 			}
 		}
 
