@@ -23,9 +23,7 @@ namespace D4DJ_Tools.Masters
 		[Key(7)]
 		public int[] SpecificBonusCharacterIds { get; set; }
 		[Key(8)]
-		public int CharacterMatchParameterBonusId { get; set; }
-		[Key(9)]
-		public int CharacterMatchParameterBonusValue { get; set; }
+		public int __CharacterMatchParameterBonusPrimaryKey__ { get; set; }
 	}
 }
 

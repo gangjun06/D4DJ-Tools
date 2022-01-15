@@ -39,6 +39,8 @@ namespace D4DJ_Tools.Masters
 	public enum CampaignCategory
 	{
 		Mileage = 1,
+		RaidUserExp = 2,
+		RaidUnitExp = 3,
 	}
 
 	public enum CardIllustType
@@ -94,6 +96,8 @@ namespace D4DJ_Tools.Masters
 		DJBoothSetlistMaxCount = 307,
 		DJBoothGuestBookSetlistCount = 308,
 		DJBoothGuestBookHighScoreListCount = 309,
+		DJBoothSetlistLivePassMaxCount = 310,
+		DJBoothSetlistActiveLivePassMaxCount = 311,
 		NicknameMaxLength = 401,
 		CommentMaxLength = 402,
 		CardDeckNameMaxLength = 403,
@@ -101,10 +105,15 @@ namespace D4DJ_Tools.Masters
 		DJBoothSetlistTitleMaxLength = 405,
 		MusicFavoriteDeckNameMaxLength = 406,
 		DJBoothCommentMaxLength = 407,
+		LiveSEPresetNameMaxLength = 408,
 		VoltageMaxAllowCount = 501,
-		FirstTimeMusicId = 601,
+		ConvertedRewardHelpId = 601,
 		PrivateRoomCommentMaxLength = 701,
 		RaidEventHpMode = 801,
+		ClubOrderCharaShadow = 901,
+		ClubOrderDJChara = 902,
+		ClubOrderDJBooth = 903,
+		ClubOrderOtherChara = 904,
 	}
 
 	public enum ConditionCategory
@@ -141,8 +150,9 @@ namespace D4DJ_Tools.Masters
 	{
 		MainAddPoint = 0,
 		Highscore = 1,
-		AddPoint = 2,
+		EngineSpecific = 2,
 		DailyAddPoint = 3,
+		CommonAddPoint = 4,
 	}
 
 	public enum PokerHandCategory
@@ -201,6 +211,7 @@ namespace D4DJ_Tools.Masters
 	{
 		Normal = 0,
 		StepUp = 1,
+		Audition = 2,
 	}
 
 	public enum HonorType
@@ -243,6 +254,25 @@ namespace D4DJ_Tools.Masters
 		Beginner = 2,
 		Veteran = 3,
 		Master = 4,
+	}
+
+	public enum LiveSECategory
+	{
+		None = 0,
+		Tap1 = 1,
+		Tap2 = 2,
+		SliderFlick = 3,
+		Scratch = 4,
+		TapEmpty = 5,
+		ScratchEmpty = 6,
+		LongLoop = 7,
+	}
+
+	public enum LiveSEPackCategory
+	{
+		SoundEffect = 1,
+		CharacterVoice = 2,
+		Collabo = 3,
 	}
 
 	public enum LoginBonusType
@@ -358,6 +388,7 @@ namespace D4DJ_Tools.Masters
 		Honor = 6,
 		Episode = 7,
 		Movie = 8,
+		DuplicateCard = 9,
 	}
 
 	public enum StockCategory
@@ -374,7 +405,7 @@ namespace D4DJ_Tools.Masters
 		GachaTicket = 9,
 		Random = 10,
 		ParameterLevelUp = 11,
-		PassiveSkillExp = 12,
+		CardStack = 12,
 		Other = 99,
 	}
 

@@ -29,7 +29,7 @@ namespace D4DJ_Tools.Masters
 		[Key(10)]
 		public string Detail { get; set; }
 		[Key(11)]
-		public string[] Live2dBg { get; set; }
+		public string[] _unused { get; set; }
 		[Key(12)]
 		public int LoginTriggerMinutes { get; set; }
 		[Key(13)]
@@ -58,6 +58,12 @@ namespace D4DJ_Tools.Masters
 		public GachaType Type { get; set; }
 		[Key(25)]
 		public int StepLoopCount { get; set; }
+		[Key(26)]
+		public int[] __HomeAnimationCardsPrimaryKey__ { get; set; }
+		[Key(27)]
+		public DateTime OtherCardDate { get; set; }
+		[Key(28)]
+		public bool PickUpLevelMax { get; set; }
 	}
 }
 

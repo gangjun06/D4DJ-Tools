@@ -30,6 +30,8 @@ namespace D4DJ_Tools.Masters
 		public int[] DatePositions { get; set; }
 		[Key(11)]
 		public int LimitDays { get; set; }
+		[Key(12)]
+		public int ComebackDays { get; set; }
 	}
 }
 

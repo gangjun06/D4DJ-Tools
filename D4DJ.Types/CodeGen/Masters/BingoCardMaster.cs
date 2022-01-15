@@ -13,7 +13,7 @@ namespace D4DJ_Tools.Masters
 		[Key(2)]
 		public int RewardPhaseId { get; set; }
 		[Key(3)]
-		public int CardImageIndex { get; set; }
+		public int[] CardImageIDs { get; set; }
 	}
 }
 
