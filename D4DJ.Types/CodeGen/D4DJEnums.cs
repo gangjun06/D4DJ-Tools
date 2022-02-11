@@ -114,6 +114,7 @@ namespace D4DJ_Tools.Masters
 		ClubOrderDJChara = 902,
 		ClubOrderDJBooth = 903,
 		ClubOrderOtherChara = 904,
+		ClubOrderFrontChara = 905,
 	}
 
 	public enum ConditionCategory
@@ -139,6 +140,12 @@ namespace D4DJ_Tools.Masters
 		Tutorial = 9,
 	}
 
+	public enum BingoCardType
+	{
+		Normal = 0,
+		Special = 1,
+	}
+
 	public enum BingoRewardCategory
 	{
 		Bingo = 0,
@@ -153,6 +160,13 @@ namespace D4DJ_Tools.Masters
 		EngineSpecific = 2,
 		DailyAddPoint = 3,
 		CommonAddPoint = 4,
+	}
+
+	public enum EventEpisodeType
+	{
+		Normal = 0,
+		D4Fes1 = 1,
+		D4Fes2 = 2,
 	}
 
 	public enum PokerHandCategory
@@ -389,6 +403,7 @@ namespace D4DJ_Tools.Masters
 		Episode = 7,
 		Movie = 8,
 		DuplicateCard = 9,
+		EventPoint = 10,
 	}
 
 	public enum StockCategory

@@ -43,7 +43,7 @@ namespace D4DJ_Tools.Masters
 		[Key(17)]
 		public GachaCategory Category { get; set; }
 		[Key(18)]
-		public int BonusStockId { get; set; }
+		public int _unused_2 { get; set; }
 		[Key(19)]
 		public int SelectBonusMaxValue { get; set; }
 		[Key(20)]
@@ -64,6 +64,12 @@ namespace D4DJ_Tools.Masters
 		public DateTime OtherCardDate { get; set; }
 		[Key(28)]
 		public bool PickUpLevelMax { get; set; }
+		[Key(29)]
+		public int ShareCashBackRate { get; set; }
+		[Key(30)]
+		public int RandomBonusMaxValue { get; set; }
+		[Key(31)]
+		public int RandomBonusStockId { get; set; }
 	}
 }
 
