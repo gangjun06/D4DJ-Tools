@@ -15,17 +15,21 @@ namespace D4DJ_Tools.Masters
 		[Key(3)]
 		public string Summary { get; set; }
 		[Key(4)]
-		public string Schedule { get; set; }
+		public string LeagueSummary { get; set; }
 		[Key(5)]
-		public string EntryDescription { get; set; }
+		public string Schedule { get; set; }
 		[Key(6)]
-		public string URL { get; set; }
+		public string EntryDescription { get; set; }
 		[Key(7)]
-		public string EntryURL { get; set; }
+		public string URL { get; set; }
 		[Key(8)]
-		public DateTime StartDate { get; set; }
+		public string EntryURL { get; set; }
 		[Key(9)]
+		public DateTime StartDate { get; set; }
+		[Key(10)]
 		public DateTime EndDate { get; set; }
+		[Key(11)]
+		public int MaxPassNumber { get; set; }
 	}
 }
 

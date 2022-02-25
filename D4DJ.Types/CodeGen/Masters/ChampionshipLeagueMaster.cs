@@ -12,6 +12,8 @@ namespace D4DJ_Tools.Masters
 		public int __ChampionshipPrimaryKey__ { get; set; }
 		[Key(2)]
 		public string Name { get; set; }
+		[Key(3)]
+		public string ColorCode { get; set; }
 	}
 }
 

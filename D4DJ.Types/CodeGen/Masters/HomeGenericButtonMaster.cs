@@ -14,6 +14,8 @@ namespace D4DJ_Tools.Masters
 		public DateTime StartDate { get; set; }
 		[Key(3)]
 		public DateTime EndDate { get; set; }
+		[Key(4)]
+		public string Text { get; set; }
 	}
 }
 
