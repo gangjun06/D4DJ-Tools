@@ -32,6 +32,8 @@ namespace D4DJ_Tools.Masters
 		public int[] __CardMatchParameterBonusesPrimaryKey__ { get; set; }
 		[Key(12)]
 		public int[] DailyRewardMultipliers { get; set; }
+		[Key(13)]
+		public int OverrideImageNumber { get; set; }
 	}
 }
 

@@ -30,6 +30,12 @@ namespace D4DJ_Tools.Masters
 		public DateTime EndDate { get; set; }
 		[Key(11)]
 		public int MaxPassNumber { get; set; }
+		[Key(12)]
+		public bool CanEntry { get; set; }
+		[Key(13)]
+		public int MaxRankingNumber { get; set; }
+		[Key(14)]
+		public DateTime DisplayStartDate { get; set; }
 	}
 }
 

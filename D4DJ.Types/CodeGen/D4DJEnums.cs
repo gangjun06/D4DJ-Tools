@@ -36,6 +36,13 @@ namespace D4DJ_Tools.Masters
 		used = 12,
 	}
 
+	public enum CampaignButtonDisplayLocation
+	{
+		Home = 1,
+		Club = 2,
+		Story = 4,
+	}
+
 	public enum CampaignCategory
 	{
 		Mileage = 1,
@@ -57,6 +64,8 @@ namespace D4DJ_Tools.Masters
 		FeverSupport = 2,
 		ScoreUpWithDamage = 3,
 		AutoScoreUp = 4,
+		SupportableScoreUp = 11,
+		SupportableSkillLonger = 12,
 	}
 
 	public enum ClubItemSpotCategory
@@ -110,11 +119,17 @@ namespace D4DJ_Tools.Masters
 		ConvertedRewardHelpId = 601,
 		PrivateRoomCommentMaxLength = 701,
 		RaidEventHpMode = 801,
+		RaidEventSpecialBossHpMode = 802,
 		ClubOrderCharaShadow = 901,
 		ClubOrderDJChara = 902,
 		ClubOrderDJBooth = 903,
 		ClubOrderOtherChara = 904,
 		ClubOrderFrontChara = 905,
+		MusicTagMaxCount = 1001,
+		MusicTagNameMaxLenght = 1002,
+		MusicTagNeedLevel = 1003,
+		MusicRecommendCount = 1004,
+		EventSlotExtendableBonusTimeSeconds = 1100,
 	}
 
 	public enum ConditionCategory
@@ -160,6 +175,7 @@ namespace D4DJ_Tools.Masters
 		EngineSpecific = 2,
 		DailyAddPoint = 3,
 		CommonAddPoint = 4,
+		None = 99,
 	}
 
 	public enum EventEpisodeType
@@ -181,6 +197,12 @@ namespace D4DJ_Tools.Masters
 		TwoPair = 7,
 		OnePair = 8,
 		HighCard = 9,
+	}
+
+	public enum BossLoopType
+	{
+		Loop = 0,
+		FinalLoop = 1,
 	}
 
 	public enum SlotEffectPhase
@@ -242,10 +264,11 @@ namespace D4DJ_Tools.Masters
 		MenuCommon = 0,
 		LoginBonus = 1,
 		Mission = 2,
-		CharacterIntroduction = 3,
-		GachaMenu = 4,
-		BoxGacha = 5,
+		BoxGacha = 3,
+		BoxGachaDraw = 4,
+		BoxGachaJackpot = 5,
 		Training = 6,
+		BoxGachaReset = 7,
 	}
 
 	public enum ChartAchieveType
@@ -298,6 +321,11 @@ namespace D4DJ_Tools.Masters
 		VipSilver = 4,
 		VipGold = 5,
 		VipPlatinum = 6,
+		EventBingo = 101,
+		EventMedley = 102,
+		EventPoker = 103,
+		EventRaid = 104,
+		EventSlot = 105,
 	}
 
 	public enum MapEventType
@@ -404,6 +432,7 @@ namespace D4DJ_Tools.Masters
 		Movie = 8,
 		DuplicateCard = 9,
 		EventPoint = 10,
+		LiveSEPack = 11,
 	}
 
 	public enum StockCategory
