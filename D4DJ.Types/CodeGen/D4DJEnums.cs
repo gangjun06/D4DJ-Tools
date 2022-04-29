@@ -1,41 +1,5 @@
 namespace D4DJ_Tools.Masters
 {
-	public enum EventType
-	{
-		MouseDown = 0,
-		MouseUp = 1,
-		MouseMove = 2,
-		MouseDrag = 3,
-		KeyDown = 4,
-		KeyUp = 5,
-		ScrollWheel = 6,
-		Repaint = 7,
-		Layout = 8,
-		DragUpdated = 9,
-		DragPerform = 10,
-		DragExited = 15,
-		Ignore = 11,
-		Used = 12,
-		ValidateCommand = 13,
-		ExecuteCommand = 14,
-		ContextClick = 16,
-		MouseEnterWindow = 20,
-		MouseLeaveWindow = 21,
-		mouseDown = 0,
-		mouseUp = 1,
-		mouseMove = 2,
-		mouseDrag = 3,
-		keyDown = 4,
-		keyUp = 5,
-		scrollWheel = 6,
-		repaint = 7,
-		layout = 8,
-		dragUpdated = 9,
-		dragPerform = 10,
-		ignore = 11,
-		used = 12,
-	}
-
 	public enum CampaignButtonDisplayLocation
 	{
 		Home = 1,
@@ -183,6 +147,16 @@ namespace D4DJ_Tools.Masters
 		Normal = 0,
 		D4Fes1 = 1,
 		D4Fes2 = 2,
+	}
+
+	public enum EventType
+	{
+		None = 0,
+		Bingo = 1,
+		Medley = 2,
+		Poker = 3,
+		Raid = 4,
+		Slot = 5,
 	}
 
 	public enum PokerHandCategory
