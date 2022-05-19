@@ -4,7 +4,7 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class SlotSpecficBonusMaster
+	public class SlotSpecificBonusMaster
 	{
 		[Key(0)]
 		public int __EventPrimaryKey__ { get; set; }
