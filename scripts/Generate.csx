@@ -66,7 +66,7 @@ using (StreamReader sr = new("dump.cs"))
 
                 for(string attr = sr.ReadLine(); attr != "}"; attr = sr.ReadLine())
                 {
-                    if(attr.Contains("[KeyAttribute]"))
+                    if(attr.Contains("[Key"))
                     {
                         codeBuilder.AppendLine($"\t\t[Key({attrIndex++})]");
                         var prop = sr.ReadLine();

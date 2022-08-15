@@ -4,16 +4,16 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class RaidBossLocalPointBonusMaster
+	public class DJSimulatorHostCharacterMaster
 	{
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public int __GroupPrimaryKey__ { get; set; }
+		public int[] ClothIds { get; set; }
 		[Key(2)]
-		public int LocalPoint { get; set; }
+		public DateTime StartDate { get; set; }
 		[Key(3)]
-		public string Name { get; set; }
+		public DateTime EndDate { get; set; }
 	}
 }
 

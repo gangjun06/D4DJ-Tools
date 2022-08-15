@@ -24,6 +24,10 @@ namespace D4DJ_Tools.Masters
 		public int[] SpecificBonusCharacterIds { get; set; }
 		[Key(8)]
 		public int __CharacterMatchParameterBonusPrimaryKey__ { get; set; }
+		[Key(9)]
+		public int[] BonusCardIds { get; set; }
+		[Key(10)]
+		public int[] __CardMatchParameterBonusesPrimaryKey__ { get; set; }
 	}
 }
 

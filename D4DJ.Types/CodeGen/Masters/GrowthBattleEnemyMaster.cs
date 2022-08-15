@@ -4,16 +4,16 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class RaidBossLocalPointBonusMaster
+	public class GrowthBattleEnemyMaster
 	{
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public int __GroupPrimaryKey__ { get; set; }
+		public int ConditionValue { get; set; }
 		[Key(2)]
-		public int LocalPoint { get; set; }
+		public int[] EnemyCharacterIds { get; set; }
 		[Key(3)]
-		public string Name { get; set; }
+		public int Sequence { get; set; }
 	}
 }
 

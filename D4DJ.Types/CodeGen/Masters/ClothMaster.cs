@@ -21,9 +21,7 @@ namespace D4DJ_Tools.Masters
 		[Key(6)]
 		public DateTime EndDate { get; set; }
 		[Key(7)]
-		public int RequiredStockId { get; set; }
-		[Key(8)]
-		public int RequiredAmount { get; set; }
+		public int SourceCardId { get; set; }
 	}
 }
 

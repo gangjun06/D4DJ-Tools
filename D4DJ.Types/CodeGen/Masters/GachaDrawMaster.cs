@@ -28,6 +28,10 @@ namespace D4DJ_Tools.Masters
 		public int[] BonusStockIds { get; set; }
 		[Key(10)]
 		public int[] BonusStockAmounts { get; set; }
+		[Key(11)]
+		public int ShareCashBackStockId { get; set; }
+		[Key(12)]
+		public int ShareCashBackPerStockCount { get; set; }
 	}
 }
 

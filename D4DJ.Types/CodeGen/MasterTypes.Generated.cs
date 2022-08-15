@@ -19,6 +19,7 @@ namespace D4DJ_Tools.Masters
 			{ "SkillExpMaster", typeof(Dictionary<ValueTuple<int, int>, SkillExpMaster>) },
 			{ "CommonValueMaster", typeof(Dictionary<CommonValueType, CommonValueMaster>) },
 			{ "DJSimulatorSetlistMusicMaster", typeof(Dictionary<ValueTuple<int, int>, DJSimulatorSetlistMusicMaster>) },
+			{ "GrowthUnlockMaster", typeof(Dictionary<ValueTuple<int, int>, GrowthUnlockMaster>) },
 			{ "PokerCoinMultiplierMaster", typeof(Dictionary<PokerHandCategory, PokerCoinMultiplierMaster>) },
 			{ "GachaBonusMaster", typeof(Dictionary<ValueTuple<int, bool>, GachaBonusMaster>) },
 			{ "ChartAchieveMaster", typeof(Dictionary<ValueTuple<int, ChartAchieveType, int>, ChartAchieveMaster>) },

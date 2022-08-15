@@ -15,7 +15,7 @@ namespace D4DJ_Tools.Masters
 		[Key(3)]
 		public int RewardId { get; set; }
 		[Key(4)]
-		public int RewardAmount { get; set; }
+		public int Amount { get; set; }
 	}
 }
 

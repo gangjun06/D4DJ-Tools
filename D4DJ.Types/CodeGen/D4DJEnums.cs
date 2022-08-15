@@ -132,6 +132,49 @@ namespace D4DJ_Tools.Masters
 		Complete = 2,
 	}
 
+	public enum EffectTargetType
+	{
+		None = 0,
+		Pick = 1,
+		All = 2,
+		Random = 3,
+	}
+
+	public enum EffectTypeOperator
+	{
+		None = 0,
+		Rate = 1,
+		Step = 2,
+	}
+
+	public enum GrowthBlockCategory
+	{
+		None = 0,
+		Red = 1,
+		Green = 2,
+		White = 3,
+		Condition = 4,
+		Character = 5,
+		Reward = 6,
+		VS = 7,
+	}
+
+	public enum GrowthBlockEffectType
+	{
+		None = 0,
+		TrainingExp = 1,
+		HeartExp = 2,
+		TechniqueExp = 3,
+		PhysicalExp = 4,
+		AllExp = 8,
+		DoubleEffect = 9,
+		LevelChange = 10,
+		TileChange = 11,
+		CharacterEffect = 12,
+		SendStock = 13,
+		LiveBattle = 14,
+	}
+
 	public enum EventAggregationType
 	{
 		MainAddPoint = 0,
@@ -157,6 +200,7 @@ namespace D4DJ_Tools.Masters
 		Poker = 3,
 		Raid = 4,
 		Slot = 5,
+		Growth = 6,
 	}
 
 	public enum PokerHandCategory
@@ -337,6 +381,9 @@ namespace D4DJ_Tools.Masters
 		Tutorial = 1,
 		Chart = 2,
 		TimeLimited = 3,
+		Daily = 4,
+		Weekly = 5,
+		Event = 6,
 	}
 
 	public enum ChartDifficulty
@@ -407,6 +454,7 @@ namespace D4DJ_Tools.Masters
 		DuplicateCard = 9,
 		EventPoint = 10,
 		LiveSEPack = 11,
+		Cloth = 12,
 	}
 
 	public enum StockCategory
