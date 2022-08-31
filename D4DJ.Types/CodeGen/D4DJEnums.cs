@@ -79,6 +79,7 @@ namespace D4DJ_Tools.Masters
 		MusicFavoriteDeckNameMaxLength = 406,
 		DJBoothCommentMaxLength = 407,
 		LiveSEPresetNameMaxLength = 408,
+		EpisodeCommentMaxLength = 409,
 		VoltageMaxAllowCount = 501,
 		ConvertedRewardHelpId = 601,
 		PrivateRoomCommentMaxLength = 701,
@@ -94,6 +95,18 @@ namespace D4DJ_Tools.Masters
 		MusicTagNeedLevel = 1003,
 		MusicRecommendCount = 1004,
 		EventSlotExtendableBonusTimeSeconds = 1100,
+		EventGrowthActionCardMaxMoveCount = 1202,
+		EventGrowthMaxHandCount = 1203,
+		EventGrowthExactDeckCount = 1204,
+		EventGrowthExactGrowthMemberCount = 1205,
+		EventGrowthActionCardMaxLevel = 1206,
+		EventGrowthActionCardMaxSameCharacter = 1207,
+		EventGrowthMaximumRedrawCount = 1208,
+		EventGrowthConsumeVoltageForRedraw = 1209,
+		EpisodeCommentTakeCount = 1301,
+		EpisodeCommentRewriteHours = 1302,
+		EpisodeCommentBanHours = 1303,
+		EpisodeCommentRatingLimit = 1304,
 	}
 
 	public enum ConditionCategory
@@ -116,6 +129,7 @@ namespace D4DJ_Tools.Masters
 		LiveResult = 4,
 		Map = 5,
 		Character = 6,
+		Growth = 7,
 		Tutorial = 9,
 	}
 
@@ -152,9 +166,9 @@ namespace D4DJ_Tools.Masters
 		None = 0,
 		Red = 1,
 		Green = 2,
-		White = 3,
-		Condition = 4,
-		Character = 5,
+		Character = 3,
+		White = 4,
+		Condition = 5,
 		Reward = 6,
 		VS = 7,
 	}
@@ -162,17 +176,18 @@ namespace D4DJ_Tools.Masters
 	public enum GrowthBlockEffectType
 	{
 		None = 0,
-		TrainingExp = 1,
+		TrainingBonus = 1,
 		HeartExp = 2,
 		TechniqueExp = 3,
 		PhysicalExp = 4,
 		AllExp = 8,
 		DoubleEffect = 9,
 		LevelChange = 10,
-		TileChange = 11,
+		BlockChange = 11,
 		CharacterEffect = 12,
-		SendStock = 13,
+		TreasureEffect = 13,
 		LiveBattle = 14,
+		OtherEffectSet = 15,
 	}
 
 	public enum EventAggregationType
@@ -201,6 +216,7 @@ namespace D4DJ_Tools.Masters
 		Raid = 4,
 		Slot = 5,
 		Growth = 6,
+		Rave = 7,
 	}
 
 	public enum PokerHandCategory
@@ -344,6 +360,8 @@ namespace D4DJ_Tools.Masters
 		EventPoker = 103,
 		EventRaid = 104,
 		EventSlot = 105,
+		EventGrowth = 106,
+		EventRave = 107,
 	}
 
 	public enum MapEventType
@@ -434,6 +452,12 @@ namespace D4DJ_Tools.Masters
 		Score = 7,
 	}
 
+	public enum StaminaCategory
+	{
+		Voltage = 1,
+		RavePoint = 2,
+	}
+
 	public enum StampCategory
 	{
 		Common = 0,
@@ -455,6 +479,7 @@ namespace D4DJ_Tools.Masters
 		EventPoint = 10,
 		LiveSEPack = 11,
 		Cloth = 12,
+		CardParameterOverwriter = 13,
 	}
 
 	public enum StockCategory
@@ -472,6 +497,7 @@ namespace D4DJ_Tools.Masters
 		Random = 10,
 		ParameterLevelUp = 11,
 		CardStack = 12,
+		RavePointRecovery = 13,
 		Other = 99,
 	}
 

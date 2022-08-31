@@ -28,6 +28,8 @@ namespace D4DJ_Tools.Masters
 		public int HomePriority { get; set; }
 		[Key(10)]
 		public AchievementNotifyType NotifyType { get; set; }
+		[Key(11)]
+		public string CommandArgument { get; set; }
 	}
 }
 

@@ -30,6 +30,8 @@ namespace D4DJ_Tools.Masters
 		public bool IsHidden { get; set; }
 		[Key(11)]
 		public AchievementNotifyType NotifyType { get; set; }
+		[Key(12)]
+		public string CommandArgument { get; set; }
 	}
 }
 

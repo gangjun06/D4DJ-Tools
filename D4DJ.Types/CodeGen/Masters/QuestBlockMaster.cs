@@ -13,7 +13,7 @@ namespace D4DJ_Tools.Masters
 		[Key(2)]
 		public int Order { get; set; }
 		[Key(3)]
-		public int __ChartPrimaryKey__ { get; set; }
+		public int ChartId { get; set; }
 		[Key(4)]
 		public ChartSectionType ChartSection { get; set; }
 		[Key(5)]

@@ -24,6 +24,10 @@ namespace D4DJ_Tools.Masters
 		public int RecoveryStockId { get; set; }
 		[Key(8)]
 		public int RecoveryStockAmount { get; set; }
+		[Key(9)]
+		public DateSelectCategory ResetType { get; set; }
+		[Key(10)]
+		public int ResetValue { get; set; }
 	}
 }
 

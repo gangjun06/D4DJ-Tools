@@ -9,15 +9,17 @@ namespace D4DJ_Tools.Masters
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public int __CharacterIdPrimaryKey__ { get; set; }
+		public int Sequence { get; set; }
 		[Key(2)]
-		public GrowthBlockEffectType[] CharacterEffectType { get; set; }
+		public int __CharacterIdPrimaryKey__ { get; set; }
 		[Key(3)]
-		public int[] EffectValues { get; set; }
+		public GrowthBlockEffectType CharacterEffectType { get; set; }
 		[Key(4)]
-		public EffectTypeOperator[] EffectTypeOperator { get; set; }
+		public int[] EffectValues { get; set; }
 		[Key(5)]
-		public int Image { get; set; }
+		public EffectTypeOperator EffectTypeOperator { get; set; }
+		[Key(6)]
+		public int ClothId { get; set; }
 	}
 }
 

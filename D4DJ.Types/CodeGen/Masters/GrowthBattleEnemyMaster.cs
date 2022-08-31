@@ -14,6 +14,14 @@ namespace D4DJ_Tools.Masters
 		public int[] EnemyCharacterIds { get; set; }
 		[Key(3)]
 		public int Sequence { get; set; }
+		[Key(4)]
+		public int[] DebuffThreshold { get; set; }
+		[Key(5)]
+		public int[] DebuffValue { get; set; }
+		[Key(6)]
+		public int[] BuffThreshold { get; set; }
+		[Key(7)]
+		public int[] BuffValue { get; set; }
 	}
 }
 

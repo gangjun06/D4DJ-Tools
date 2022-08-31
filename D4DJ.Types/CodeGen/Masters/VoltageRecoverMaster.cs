@@ -9,10 +9,12 @@ namespace D4DJ_Tools.Masters
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public int MinRecoveredCount { get; set; }
+		public StaminaCategory Category { get; set; }
 		[Key(2)]
-		public int DiamondAmount { get; set; }
+		public int MinRecoveredCount { get; set; }
 		[Key(3)]
+		public int DiamondAmount { get; set; }
+		[Key(4)]
 		public int VoltageRecoverAmount { get; set; }
 	}
 }

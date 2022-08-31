@@ -20,6 +20,8 @@ namespace D4DJ_Tools.Masters
 		public EffectTypeOperator EffectTypeOperator { get; set; }
 		[Key(6)]
 		public int EffectChance { get; set; }
+		[Key(7)]
+		public int BackUpId { get; set; }
 	}
 }
 
