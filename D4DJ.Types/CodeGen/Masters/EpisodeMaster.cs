@@ -24,6 +24,10 @@ namespace D4DJ_Tools.Masters
 		public DateTime EndDate { get; set; }
 		[Key(8)]
 		public bool HasVoice { get; set; }
+		[Key(9)]
+		public int ADVLiveID { get; set; }
+		[Key(10)]
+		public int[] EpisodeCharacters { get; set; }
 	}
 }
 

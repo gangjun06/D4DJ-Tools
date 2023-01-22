@@ -12,6 +12,8 @@ namespace D4DJ_Tools.Masters
 		public int[] __CardIdsPrimaryKey__ { get; set; }
 		[Key(2)]
 		public int BonusRate { get; set; }
+		[Key(3)]
+		public int SameCharacterBonusRate { get; set; }
 	}
 }
 

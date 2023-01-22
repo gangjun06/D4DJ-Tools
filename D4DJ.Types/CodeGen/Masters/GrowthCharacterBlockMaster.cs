@@ -17,9 +17,11 @@ namespace D4DJ_Tools.Masters
 		[Key(4)]
 		public int[] EffectValues { get; set; }
 		[Key(5)]
-		public EffectTypeOperator EffectTypeOperator { get; set; }
+		public GrowthEffectTypeOperator EffectTypeOperator { get; set; }
 		[Key(6)]
 		public int ClothId { get; set; }
+		[Key(7)]
+		public int EpisodeId { get; set; }
 	}
 }
 

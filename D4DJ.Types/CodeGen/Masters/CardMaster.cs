@@ -40,6 +40,8 @@ namespace D4DJ_Tools.Masters
 		public DateTime EndDate { get; set; }
 		[Key(16)]
 		public int GachaCardAttribute { get; set; }
+		[Key(17)]
+		public bool CanUseCommonCardStackStock { get; set; }
 	}
 }
 

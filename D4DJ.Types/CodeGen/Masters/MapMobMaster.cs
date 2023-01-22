@@ -52,6 +52,8 @@ namespace D4DJ_Tools.Masters
 		public DateTime StartDate { get; set; }
 		[Key(22)]
 		public DateTime EndDate { get; set; }
+		[Key(23)]
+		public int SummerSkin { get; set; }
 	}
 }
 

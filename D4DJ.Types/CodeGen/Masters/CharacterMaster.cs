@@ -22,6 +22,8 @@ namespace D4DJ_Tools.Masters
 		public string FullNameEnglish { get; set; }
 		[Key(7)]
 		public string ColorCode { get; set; }
+		[Key(8)]
+		public int[] IdHistories { get; set; }
 	}
 }
 

@@ -4,12 +4,14 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class GrowthMapMaster
+	public class SceneGroupTipsMaster
 	{
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public int[] __TemplatesPrimaryKey__ { get; set; }
+		public string SceneName { get; set; }
+		[Key(2)]
+		public int[] GroupIds { get; set; }
 	}
 }
 

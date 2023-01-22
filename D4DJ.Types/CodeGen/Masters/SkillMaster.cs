@@ -22,6 +22,10 @@ namespace D4DJ_Tools.Masters
 		public float MaxSeconds { get; set; }
 		[Key(7)]
 		public int PerfectScoreUpRate { get; set; }
+		[Key(8)]
+		public int[] GroupBonusCharacterIds { get; set; }
+		[Key(9)]
+		public int[] GroupBonusRates { get; set; }
 	}
 }
 

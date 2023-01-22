@@ -22,6 +22,16 @@ namespace D4DJ_Tools.Masters
 		public int[] BuffThreshold { get; set; }
 		[Key(7)]
 		public int[] BuffValue { get; set; }
+		[Key(8)]
+		public string EnemyName { get; set; }
+		[Key(9)]
+		public int __AggregationPrimaryKey__ { get; set; }
+		[Key(10)]
+		public float ImagePositionY { get; set; }
+		[Key(11)]
+		public GrowthEnemyType EnemyType { get; set; }
+		[Key(12)]
+		public int __EventPrimaryKey__ { get; set; }
 	}
 }
 

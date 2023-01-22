@@ -28,6 +28,10 @@ namespace D4DJ_Tools.Masters
 		public int EventPointParameterBonusId { get; set; }
 		[Key(10)]
 		public int EventPointParameterBonusRate { get; set; }
+		[Key(11)]
+		public int EventPointParameterBonusValue { get; set; }
+		[Key(12)]
+		public int EventPointParameterBaseValue { get; set; }
 	}
 }
 

@@ -24,6 +24,8 @@ namespace D4DJ_Tools.Masters
 		public int[] IsHidden { get; set; }
 		[Key(8)]
 		public int __MissionPrimaryKey__ { get; set; }
+		[Key(9)]
+		public int[] __OpenConditionMissionDetailsPrimaryKey__ { get; set; }
 	}
 }
 

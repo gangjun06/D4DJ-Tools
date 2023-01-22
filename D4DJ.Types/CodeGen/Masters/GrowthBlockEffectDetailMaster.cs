@@ -11,13 +11,13 @@ namespace D4DJ_Tools.Masters
 		[Key(1)]
 		public GrowthBlockEffectType EffectType { get; set; }
 		[Key(2)]
-		public EffectTargetType EffectTargetType { get; set; }
+		public GrowthEffectTargetType EffectTargetType { get; set; }
 		[Key(3)]
 		public int EffectTargetValue { get; set; }
 		[Key(4)]
 		public int EffectTypeValue { get; set; }
 		[Key(5)]
-		public EffectTypeOperator EffectTypeOperator { get; set; }
+		public GrowthEffectTypeOperator EffectTypeOperator { get; set; }
 		[Key(6)]
 		public int EffectChance { get; set; }
 		[Key(7)]

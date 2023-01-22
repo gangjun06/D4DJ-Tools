@@ -71,6 +71,10 @@ namespace D4DJ_Tools.Masters
 		DJBoothGuestBookHighScoreListCount = 309,
 		DJBoothSetlistLivePassMaxCount = 310,
 		DJBoothSetlistActiveLivePassMaxCount = 311,
+		CharacterMaxCountPerUnit = 312,
+		DeckEditGaugeMaxValue = 313,
+		AvailableLatestNormalUnitId = 314,
+		HighScoreRatingDivisionCoefficient = 315,
 		NicknameMaxLength = 401,
 		CommentMaxLength = 402,
 		CardDeckNameMaxLength = 403,
@@ -80,6 +84,8 @@ namespace D4DJ_Tools.Masters
 		DJBoothCommentMaxLength = 407,
 		LiveSEPresetNameMaxLength = 408,
 		EpisodeCommentMaxLength = 409,
+		BirthdayFlowerCommentMaxLength = 410,
+		EpisodeCommentShareMaxLength = 411,
 		VoltageMaxAllowCount = 501,
 		ConvertedRewardHelpId = 601,
 		PrivateRoomCommentMaxLength = 701,
@@ -103,10 +109,26 @@ namespace D4DJ_Tools.Masters
 		EventGrowthActionCardMaxSameCharacter = 1207,
 		EventGrowthMaximumRedrawCount = 1208,
 		EventGrowthConsumeVoltageForRedraw = 1209,
+		EventGrowthConsumeVoltageForPlayStart = 1210,
 		EpisodeCommentTakeCount = 1301,
 		EpisodeCommentRewriteHours = 1302,
-		EpisodeCommentBanHours = 1303,
+		EpisodeCommentPenaltyHours = 1303,
 		EpisodeCommentRatingLimit = 1304,
+		EpisodeCommentPenaltyCount = 1305,
+		EventRaveFlyerBonusRate = 1401,
+		EventRaveFlyerBonusRecoveryMaxCount = 1402,
+	}
+
+	public enum PushNotificationType
+	{
+		Midnight = 0,
+		Liked = 1,
+		GuestBookPost = 2,
+		FriendRequest = 3,
+		MusicPresent = 4,
+		VoltageMax = 5,
+		Retention24h = 6,
+		NavigationCard = 7,
 	}
 
 	public enum ConditionCategory
@@ -146,21 +168,6 @@ namespace D4DJ_Tools.Masters
 		Complete = 2,
 	}
 
-	public enum EffectTargetType
-	{
-		None = 0,
-		Pick = 1,
-		All = 2,
-		Random = 3,
-	}
-
-	public enum EffectTypeOperator
-	{
-		None = 0,
-		Rate = 1,
-		Step = 2,
-	}
-
 	public enum GrowthBlockCategory
 	{
 		None = 0,
@@ -181,13 +188,33 @@ namespace D4DJ_Tools.Masters
 		TechniqueExp = 3,
 		PhysicalExp = 4,
 		AllExp = 8,
-		DoubleEffect = 9,
 		LevelChange = 10,
 		BlockChange = 11,
 		CharacterEffect = 12,
 		TreasureEffect = 13,
 		LiveBattle = 14,
 		OtherEffectSet = 15,
+	}
+
+	public enum GrowthEffectTargetType
+	{
+		None = 0,
+		Pick = 1,
+		All = 2,
+		Random = 3,
+	}
+
+	public enum GrowthEffectTypeOperator
+	{
+		None = 0,
+		Rate = 1,
+		Step = 2,
+	}
+
+	public enum GrowthEnemyType
+	{
+		Normal = 0,
+		Collabo = 1,
 	}
 
 	public enum EventAggregationType
@@ -197,6 +224,7 @@ namespace D4DJ_Tools.Masters
 		EngineSpecific = 2,
 		DailyAddPoint = 3,
 		CommonAddPoint = 4,
+		RaveShiftPoint = 5,
 		None = 99,
 	}
 
@@ -205,6 +233,10 @@ namespace D4DJ_Tools.Masters
 		Normal = 0,
 		D4Fes1 = 1,
 		D4Fes2 = 2,
+		D4Fes3 = 3,
+		D4Fes3Nova = 4,
+		D4Fes3Origin = 5,
+		D4Fes3Finale = 6,
 	}
 
 	public enum EventType
@@ -237,6 +269,28 @@ namespace D4DJ_Tools.Masters
 	{
 		Loop = 0,
 		FinalLoop = 1,
+	}
+
+	public enum RAVEClubTierType
+	{
+		Rookie = 1,
+		Newcomer = 2,
+		Guest = 3,
+		Resident = 4,
+		Challenger = 5,
+		Dominator = 6,
+	}
+
+	public enum RaveMemberTrendGroupCategory
+	{
+		Unit = 1,
+		Character = 2,
+		Attribute = 3,
+		Parameter = 4,
+		Rarity = 5,
+		Skill = 6,
+		PassiveSkill = 7,
+		StackCount = 8,
 	}
 
 	public enum SlotEffectPhase
@@ -282,15 +336,17 @@ namespace D4DJ_Tools.Masters
 		Normal = 0,
 		StepUp = 1,
 		Audition = 2,
+		Guaranteed = 3,
 	}
 
 	public enum HonorType
 	{
 		Common = 0,
 		Mission = 1,
-		Character = 2,
+		DigRank = 2,
 		Event = 3,
 		D4Pass = 4,
+		Character = 5,
 	}
 
 	public enum Live2DUIChatCategory
@@ -364,6 +420,12 @@ namespace D4DJ_Tools.Masters
 		EventRave = 107,
 	}
 
+	public enum MapBirthdayFlowerType
+	{
+		Public = 0,
+		Private = 1,
+	}
+
 	public enum MapEventType
 	{
 		Normal = 0,
@@ -432,6 +494,14 @@ namespace D4DJ_Tools.Masters
 		Collabo = 5,
 	}
 
+	public enum NavigationCardVoiceCategory
+	{
+		Talk = 0,
+		Time = 1,
+		Weekday = 2,
+		Idle = 3,
+	}
+
 	public enum MileageRank
 	{
 		Normal = 0,
@@ -480,6 +550,8 @@ namespace D4DJ_Tools.Masters
 		LiveSEPack = 11,
 		Cloth = 12,
 		CardParameterOverwriter = 13,
+		BirthdayFlower = 14,
+		DigRankLevel = 15,
 	}
 
 	public enum StockCategory
@@ -498,6 +570,7 @@ namespace D4DJ_Tools.Masters
 		ParameterLevelUp = 11,
 		CardStack = 12,
 		RavePointRecovery = 13,
+		RaveBoost = 14,
 		Other = 99,
 	}
 

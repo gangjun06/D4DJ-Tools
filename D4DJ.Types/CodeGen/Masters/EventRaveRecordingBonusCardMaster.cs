@@ -4,14 +4,14 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class GrowthBlockMaster
+	public class EventRaveRecordingBonusCardMaster
 	{
 		[Key(0)]
 		public int Id { get; set; }
 		[Key(1)]
-		public GrowthBlockCategory BlockType { get; set; }
+		public int BonusId { get; set; }
 		[Key(2)]
-		public int[] __EffectSetPrimaryKey__ { get; set; }
+		public int __CardPrimaryKey__ { get; set; }
 	}
 }
 
