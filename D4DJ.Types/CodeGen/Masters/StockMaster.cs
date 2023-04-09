@@ -36,6 +36,8 @@ namespace D4DJ_Tools.Masters
 		public DateTime EndDate { get; set; }
 		[Key(14)]
 		public bool IsAppropriateSales { get; set; }
+		[Key(15)]
+		public EventType ResetEventType { get; set; }
 	}
 }
 

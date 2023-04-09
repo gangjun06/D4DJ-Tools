@@ -31,7 +31,7 @@ namespace D4DJ_Tools.Masters
 		[Key(11)]
 		public GrowthEnemyType EnemyType { get; set; }
 		[Key(12)]
-		public int __EventPrimaryKey__ { get; set; }
+		public float MapSDScale { get; set; }
 	}
 }
 

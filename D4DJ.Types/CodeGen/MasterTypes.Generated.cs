@@ -23,7 +23,6 @@ namespace D4DJ_Tools.Masters
 			{ "OverrideDefinedGameTextMaster", typeof(Dictionary<string, OverrideDefinedGameTextMaster>) },
 			{ "DJSimulatorSetlistMusicMaster", typeof(Dictionary<ValueTuple<int, int>, DJSimulatorSetlistMusicMaster>) },
 			{ "GrowthCharacterBlockMaster", typeof(Dictionary<ValueTuple<int, int>, GrowthCharacterBlockMaster>) },
-			{ "GrowthUnlockMaster", typeof(Dictionary<ValueTuple<int, int>, GrowthUnlockMaster>) },
 			{ "PokerCoinMultiplierMaster", typeof(Dictionary<PokerHandCategory, PokerCoinMultiplierMaster>) },
 			{ "EventRaveMemberTrendGroupMaster", typeof(Dictionary<RaveMemberTrendGroupCategory, EventRaveMemberTrendGroupMaster>) },
 			{ "EventRaveSeasonMaster", typeof(Dictionary<ValueTuple<int, int>, EventRaveSeasonMaster>) },

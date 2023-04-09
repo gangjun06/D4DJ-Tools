@@ -4,7 +4,7 @@ using System;
 namespace D4DJ_Tools.Masters
 {
 	[MessagePackObject]
-	public class DJSimulatorHostClubSetlistMaster
+	public class DJSimulatorHostClubSetListMaster
 	{
 		[Key(0)]
 		public int Id { get; set; }

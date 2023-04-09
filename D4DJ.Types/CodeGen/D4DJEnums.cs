@@ -239,6 +239,12 @@ namespace D4DJ_Tools.Masters
 		D4Fes3Finale = 6,
 	}
 
+	public enum EventGroupDisplayType
+	{
+		StringType = 0,
+		UnitLogoType = 1,
+	}
+
 	public enum EventType
 	{
 		None = 0,
@@ -269,6 +275,17 @@ namespace D4DJ_Tools.Masters
 	{
 		Loop = 0,
 		FinalLoop = 1,
+	}
+
+	public enum RaidResourceType
+	{
+		SoloRaidButton = 0,
+		MultiRaidButton = 1,
+		SpecialRaidButton = 2,
+		LocalPointRaidButton = 3,
+		RaidLiveLog = 4,
+		FirstTimeDrop = 5,
+		SecondTimeDrop = 6,
 	}
 
 	public enum RAVEClubTierType
@@ -313,6 +330,15 @@ namespace D4DJ_Tools.Masters
 		Monthly = 3,
 	}
 
+	public enum FesGachaBuffEffectType
+	{
+		RarityUp = 1,
+		ReplaceTable = 2,
+		StockPresent = 3,
+		AddRoulettePoint = 4,
+		ReplaceTableWithUniquePick = 5,
+	}
+
 	public enum GachaCategory
 	{
 		Normal = 1,
@@ -337,6 +363,7 @@ namespace D4DJ_Tools.Masters
 		StepUp = 1,
 		Audition = 2,
 		Guaranteed = 3,
+		FesRoulette = 4,
 	}
 
 	public enum HonorType
