@@ -42,6 +42,8 @@ namespace D4DJ_Tools.Masters
 		public int GachaCardAttribute { get; set; }
 		[Key(17)]
 		public bool CanUseCommonCardStackStock { get; set; }
+		[Key(18)]
+		public bool IsPermanent { get; set; }
 	}
 }
 

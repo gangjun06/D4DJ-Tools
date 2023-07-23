@@ -24,6 +24,14 @@ namespace D4DJ_Tools.Masters
 		public bool IsAuto { get; set; }
 		[Key(8)]
 		public bool IsMVOn { get; set; }
+		[Key(9)]
+		public bool AutoMiss { get; set; }
+		[Key(10)]
+		public QuestConditionType ConditionType { get; set; }
+		[Key(11)]
+		public int ConditionValue { get; set; }
+		[Key(12)]
+		public int DeckPower { get; set; }
 	}
 }
 

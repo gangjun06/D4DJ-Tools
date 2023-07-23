@@ -36,6 +36,8 @@ namespace D4DJ_Tools.Masters
 		public int MaxRankingNumber { get; set; }
 		[Key(14)]
 		public DateTime DisplayStartDate { get; set; }
+		[Key(15)]
+		public string BGMPath { get; set; }
 	}
 }
 

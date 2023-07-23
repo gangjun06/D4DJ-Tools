@@ -46,6 +46,10 @@ namespace D4DJ_Tools.Masters
 		public EventEpisodeType EpisodeType { get; set; }
 		[Key(19)]
 		public int BoxGachaId { get; set; }
+		[Key(20)]
+		public string[] BonusTipsImageNames { get; set; }
+		[Key(21)]
+		public int RedirectEpisodeEventId { get; set; }
 	}
 }
 

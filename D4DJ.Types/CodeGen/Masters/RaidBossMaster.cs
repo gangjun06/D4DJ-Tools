@@ -34,6 +34,10 @@ namespace D4DJ_Tools.Masters
 		public int[] DailyRewardMultipliers { get; set; }
 		[Key(13)]
 		public int OverrideImageNumber { get; set; }
+		[Key(14)]
+		public int ClubFormationId { get; set; }
+		[Key(15)]
+		public int ClubDeckId { get; set; }
 	}
 }
 

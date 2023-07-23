@@ -34,6 +34,8 @@ namespace D4DJ_Tools.Masters
 		public int LimitDays { get; set; }
 		[Key(13)]
 		public int ComebackDays { get; set; }
+		[Key(14)]
+		public int[] StepUpShiftDays { get; set; }
 	}
 }
 

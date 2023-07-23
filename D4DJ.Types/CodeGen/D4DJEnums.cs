@@ -28,6 +28,7 @@ namespace D4DJ_Tools.Masters
 		FeverSupport = 2,
 		ScoreUpWithDamage = 3,
 		AutoScoreUp = 4,
+		ManualScoreUp = 5,
 		SupportableScoreUp = 11,
 		SupportableSkillLonger = 12,
 	}
@@ -117,6 +118,16 @@ namespace D4DJ_Tools.Masters
 		EpisodeCommentPenaltyCount = 1305,
 		EventRaveFlyerBonusRate = 1401,
 		EventRaveFlyerBonusRecoveryMaxCount = 1402,
+		EventRaveRewardRateMin = 1403,
+		EventRaveRewardRateMax = 1404,
+		EventRaveMusicTrendGaugeMax = 1405,
+		EventRaveMemberTrendGaugeMax = 1406,
+		EventRavePerformanceGaugeMax = 1407,
+		EventRavePerformanceGaugeLogarithmExponentiation = 1408,
+		EventRaveMemberTrendGaugeLogarithmExponentiation = 1409,
+		GachaTopRandomPickupMemberMaxCount = 1501,
+		GachaTopRemasterGachaRandomPickupMemberMaxCount = 1502,
+		LiveResultObtainableDiamondMusicReleaseDate = 2001,
 	}
 
 	public enum PushNotificationType
@@ -225,6 +236,7 @@ namespace D4DJ_Tools.Masters
 		DailyAddPoint = 3,
 		CommonAddPoint = 4,
 		RaveShiftPoint = 5,
+		RaveSeasonPoint = 6,
 		None = 99,
 	}
 
@@ -243,6 +255,13 @@ namespace D4DJ_Tools.Masters
 	{
 		StringType = 0,
 		UnitLogoType = 1,
+	}
+
+	public enum EventOverwriteType
+	{
+		EventLogo = 0,
+		CharacterImage = 1,
+		EventName = 2,
 	}
 
 	public enum EventType
@@ -286,6 +305,13 @@ namespace D4DJ_Tools.Masters
 		RaidLiveLog = 4,
 		FirstTimeDrop = 5,
 		SecondTimeDrop = 6,
+		OutOfTermSPRaidButton = 7,
+	}
+
+	public enum RaidType
+	{
+		SpecialRaid = 0,
+		AllStarRaid = 1,
 	}
 
 	public enum RAVEClubTierType
@@ -364,6 +390,8 @@ namespace D4DJ_Tools.Masters
 		Audition = 2,
 		Guaranteed = 3,
 		FesRoulette = 4,
+		PickUpSelect = 5,
+		Rerollable = 6,
 	}
 
 	public enum HonorType

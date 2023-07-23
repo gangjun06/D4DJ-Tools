@@ -14,6 +14,8 @@ namespace D4DJ_Tools.Masters
 		public int EventId { get; set; }
 		[Key(3)]
 		public BossLoopType BossLoopType { get; set; }
+		[Key(4)]
+		public RaidType RaidType { get; set; }
 	}
 }
 
